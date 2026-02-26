@@ -1,18 +1,20 @@
 {
   "name": "ws-app",
   "version": "1.0.0",
-    "scripts": {
+  "scripts": {
     "dev": "nodemon --exec ts-node src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^5.2.1",
     "nodemon": "^3.1.14",
     "ws": "^8.19.0"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^25.3.0",
     "@types/nodemon": "^3.1.1",

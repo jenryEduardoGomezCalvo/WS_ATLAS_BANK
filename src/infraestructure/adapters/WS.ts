@@ -17,6 +17,8 @@ export function SetUpWS(server: Server) {
 
 export function broadcastToAll(data: object) {
   const message = JSON.stringify(data);
+  console.log("estoy aqui por ti");
+  
   clients.forEach((ws) => {
     if (ws.readyState === WebSocket.OPEN) {
       ws.send(message);
